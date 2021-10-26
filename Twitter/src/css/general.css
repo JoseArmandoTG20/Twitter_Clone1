@@ -1,0 +1,197 @@
+/* Importar Fuentes de una pagina de internet */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 87vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Propiedades del Fondo */
+.fondo {
+    height: 110%;
+    background: url(../css/imagenes/iconos/fondo-pantalla.png) center center/cover;
+    flex: 0 1 53vw;
+    position: relative;
+}
+
+.contenido {
+    flex: 0 0 47vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+/* Propiedades del Logo */
+.logo-twitter {
+    width: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #fff;
+
+}
+
+/* Propiedades del Icono */
+.icono-twitter {
+    width: 4rem;
+    fill: #ffffff;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 4.5vw;
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: #536471;
+}
+
+h3 a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #56b0f5;
+    margin: .3rem .5rem;
+    text-transform: capitalize;
+}
+
+h4{
+    font-weight: 900;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+h4 a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #56b0f5;
+    margin: .3rem .5rem;
+    text-transform: capitalize;
+}
+
+.boton-google{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 3.4rem;
+    border-radius: 10vw;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 750;
+    color: black;  
+    margin-bottom: 10px;
+    flex-direction: column;
+    
+}
+
+.boton-apple{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 3.4rem;
+    border-radius: 10vw;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 750;
+    color: black;  
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.boton-celular{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 3.4rem;
+    border-radius: 10vw;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 750;
+    color: black;  
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.pie-pagina{
+    padding: 1rem 2%;
+}
+
+.pie-pagina nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina nav a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #536471;
+    margin: .3rem .5rem;
+    text-transform: capitalize;
+}
+
+.pie-pagina nav div{
+    text-decoration: none;
+    font-size: 13px;
+    color: #536471;
+    margin: .3rem .5rem;
+    text-transform: capitalize;
+}
+
+.pie-pagina nav :hover{
+    border-bottom: 1px solid #536471;
+}
+
+@media(max-width: 1050px){
+    .contenido{
+        order: -1;
+        max-width: 600px;
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    .fondo{
+        height: 50vh;
+        flex: 0 1 100vw;
+    }
+
+    .botones-inicio-cuenta{
+        display: flex;
+        flex-direction: column;
+    }
+}
